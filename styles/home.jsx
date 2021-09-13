@@ -120,7 +120,10 @@ export const InfoCard = styled.article`
     }
 
     @media(max-width: 768px) {
-        height: 18rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 23rem;
         width: 100%;
     }
 `
