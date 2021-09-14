@@ -1,7 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
+import DevIcon from 'devicon-react-svg';
 import profileImage from '../assets/profile.jpg';
+import linkedInIcon from '../assets/linkedin-icon.png';
+import gitHubLogo from '../assets/github-icon-white-github-icon-black-background-symbol-logo-trademark-steering-wheel-transparent-png-842663.png';
+
 import { 
     Container, 
     Profile, 
@@ -24,59 +28,120 @@ export default function Home() {
                             alt="Profile Image"
                         />
                     </ProfilePicContainer>
-                    <h1>{"<"}HI, I’M RONY A FRONTEND DEVELOPER FROM BRAZIL {"/>"} </h1>
+                    <h1>{"<"}HI, I’M RONY A FRONTEND DEVELOPER FROM BRAZIL{"/>"}</h1>
                     <p>
                         Welcome to my website, my name is Rony and I&apos;m a Frotend Developer from Brazil that loves technology and coding. Actually I&apos;m working as Software Developer Intern using React.js, Typescript, material-ui, styled components and also using Figma for prototyping.
                     </p>
+
+                    <ul className="social-links">
+                        <li>
+                            <a href="https://www.linkedin.com/in/rony-p-11a738117/" target="_blank">
+                                <Image
+                                    src={linkedInIcon}
+                                    alt="LinkedIn Icon"
+                                    height={35}
+                                    width={35}
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/rony646" target="_blank">
+                                <Image
+                                    src={gitHubLogo}
+                                    alt="GitHub Icon"
+                                    height={35}
+                                    width={35}
+                                />
+                            </a>
+                        </li>
+                    </ul>
                 </Profile>
+
                 <Info>
                     <h2>Work Experience</h2>
-                    <ul>
+                    <ul className="card-list">
                         <li>
-                            <InfoCard>
-                               <h1>Software Developer Intern | Mundiale</h1>
-                               <span>Belo Horizonte - MG, Brazil</span>
-                               <h3>Feb, 2021 - Current</h3>
-                               <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in magna elementum, mollis arcu sed, finibus justo. Nunc molestie ipsum velit. Aenean cursus ex dolor, in suscipit orci ullamcorper eget. In ornare lacus sapien, laoreet sagittis ante euismod id. Aenean in iaculis leo.
-                               </p>
-                            </InfoCard>
+                            <a href="https://www.mundiale.com.br/" target="_blank">
+                                <InfoCard>
+                                <h1>Software Developer Intern | Mundiale</h1>
+                                <span>Belo Horizonte - MG, Brazil</span>
+                                <h3>Feb, 2021 - Current</h3>
+                                <p>
+                                        Working as a Frontend Software Developer Intern using React.js, TypeScript, Material UI and also creating figma prototypes for Dashboards and other Web Applications.
+                                </p>
+                                </InfoCard>
+                            </a>
                         </li>
 
                         <li>
-                            <InfoCard>
-                               <h1>Service Desk Intern | Stefanini Group</h1>
-                               <span>Belo Horizonte - MG, Brazil</span>
-                               <h3>Aug, 2021 - Feb, 2021</h3>
-                               <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in magna elementum, mollis arcu sed, finibus justo. Nunc molestie ipsum velit. Aenean cursus ex dolor, in suscipit orci ullamcorper eget. In ornare lacus sapien, laoreet sagittis ante euismod id. Aenean in iaculis leo.
-                               </p>
-                            </InfoCard>
+                            <a href="https://stefanini.com/pt-br" target="_blank">
+                                <InfoCard>
+                                <h1>Service Desk Intern | Stefanini Group</h1>
+                                <span>Belo Horizonte - MG, Brazil</span>
+                                <h3>Aug, 2021 - Feb, 2021</h3>
+                                <p>
+                                        Working as a Service Desk intern opening and solving lvl 1 tickets for great clients of the region.
+                                </p>
+                                </InfoCard>
+                            </a>
                         </li>
                         
                     </ul>
 
                     <h2>Projects</h2>
-                    <ul>
+                    <ul className="card-list">
                         <li>
-                            <InfoCard>
-                                Project 1
-                            </InfoCard>
+                            <a href="https://github.com/rony646/food-app" target="_blank">
+                                <InfoCard>
+                                    <h1>Food App</h1>
+                                    <strong>Description: </strong>
+                                    <p>A React Native mobile app with seven screens where you can search for a meal, add it to the cart and finish your order.</p>
+                                    <strong>Techs Used: </strong>
+                                    <ul className="techs-list">
+                                        <li>React Native</li>
+                                        <li>TypeScript</li>
+                                        <li>Redux</li>
+                                        <li>Styled Components</li>
+                                    </ul>
+                                </InfoCard>
+                            </a>
                         </li>
                         
                         <li>
-                            <InfoCard>
-                                Project 2
-                            </InfoCard>
+                            <a href="https://github.com/rony646/weather-app" target="_blank">
+                                <InfoCard>
+                                    <h1>Weather App</h1>
+                                    <strong>Description: </strong>
+                                    <p>A React App created using the Open Weather API where you can search for a location and see the wheather forecast for five days.</p>
+                                    <strong>Techs Used: </strong>
+                                    <ul className="techs-list">
+                                        <li>React</li>
+                                        <li>Context API</li>
+                                        <li>Axios</li>
+                                    </ul>
+                                </InfoCard>
+                            </a>
                         </li>
 
                         <li>
-                            <InfoCard>
-                                Project 3
-                            </InfoCard>
+                            <a href="https://github.com/rony646/where-in-the-world" target="_blank">
+                                <InfoCard>
+                                    <h1>Where in the World</h1>
+                                    <strong>Description: </strong>
+                                    <p>A React App where you can search for a country and see some info about it.</p>
+                                    <strong>Techs Used: </strong>
+                                    <ul className="techs-list">
+                                        <li>React</li>
+                                        <li>React Router</li>
+                                        <li>Styled Components</li>
+                                    </ul>
+                                </InfoCard>
+                            </a>
                         </li>
 
                     </ul>
+
+                    
                 </Info>
             </Container>
         </>
