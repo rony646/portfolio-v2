@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
-import DevIcon from 'devicon-react-svg';
 import profileImage from '../assets/profile.jpg';
 import linkedInIcon from '../assets/linkedin-icon.png';
 import gitHubLogo from '../assets/github-icon-white-github-icon-black-background-symbol-logo-trademark-steering-wheel-transparent-png-842663.png';
@@ -59,10 +58,11 @@ export default function Home() {
 
                 <Info>
                     <h2>Work Experience</h2>
-                    <ul className="card-list">
+                    <ul className="card-list ">
                         <li>
-                            <a href="https://www.mundiale.com.br/" target="_blank">
-                                <InfoCard>
+                            
+                            <a href="https://www.mundiale.com.br/" target="_blank" >
+                                <InfoCard >
                                 <h1>Software Developer Intern | Mundiale</h1>
                                 <span>Belo Horizonte - MG, Brazil</span>
                                 <h3>Feb, 2021 - Current</h3>
@@ -71,6 +71,7 @@ export default function Home() {
                                 </p>
                                 </InfoCard>
                             </a>
+                            
                         </li>
 
                         <li>
@@ -92,7 +93,7 @@ export default function Home() {
                     <ul className="card-list">
                         <li>
                             <a href="https://github.com/rony646/food-app" target="_blank">
-                                <InfoCard>
+                                <InfoCard className>
                                     <h1>Food App</h1>
                                     <strong>Description: </strong>
                                     <p>A React Native mobile app with seven screens where you can search for a meal, add it to the cart and finish your order.</p>
