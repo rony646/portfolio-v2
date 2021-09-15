@@ -34,7 +34,7 @@ export default function Home() {
 
                     <ul className="social-links">
                         <li>
-                            <a href="https://www.linkedin.com/in/rony-p-11a738117/" target="_blank">
+                            <a href="https://www.linkedin.com/in/rony-p-11a738117/" target="_blank" rel="noreferrer">
                                 <Image
                                     src={linkedInIcon}
                                     alt="LinkedIn Icon"
@@ -44,7 +44,7 @@ export default function Home() {
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/rony646" target="_blank">
+                            <a href="https://github.com/rony646" target="_blank" rel="noreferrer">
                                 <Image
                                     src={gitHubLogo}
                                     alt="GitHub Icon"
@@ -61,7 +61,7 @@ export default function Home() {
                     <ul className="card-list ">
                         <li>
                             
-                            <a href="https://www.mundiale.com.br/" target="_blank" >
+                            <a href="https://www.mundiale.com.br/" target="_blank" rel="noreferrer" >
                                 <InfoCard >
                                 <h1>Software Developer Intern | Mundiale</h1>
                                 <span>Belo Horizonte - MG, Brazil</span>
@@ -75,7 +75,7 @@ export default function Home() {
                         </li>
 
                         <li>
-                            <a href="https://stefanini.com/pt-br" target="_blank">
+                            <a href="https://stefanini.com/pt-br" target="_blank" rel="noreferrer" >
                                 <InfoCard>
                                 <h1>Service Desk Intern | Stefanini Group</h1>
                                 <span>Belo Horizonte - MG, Brazil</span>
@@ -92,7 +92,7 @@ export default function Home() {
                     <h2>Projects</h2>
                     <ul className="card-list">
                         <li>
-                            <a href="https://github.com/rony646/food-app" target="_blank">
+                            <a href="https://github.com/rony646/food-app" target="_blank" rel="noreferrer" >
                                 <InfoCard className>
                                     <h1>Food App</h1>
                                     <strong>Description: </strong>
@@ -109,7 +109,7 @@ export default function Home() {
                         </li>
                         
                         <li>
-                            <a href="https://github.com/rony646/weather-app" target="_blank">
+                            <a href="https://github.com/rony646/weather-app" target="_blank" rel="noreferrer" >
                                 <InfoCard>
                                     <h1>Weather App</h1>
                                     <strong>Description: </strong>
@@ -125,7 +125,7 @@ export default function Home() {
                         </li>
 
                         <li>
-                            <a href="https://github.com/rony646/where-in-the-world" target="_blank">
+                            <a href="https://github.com/rony646/where-in-the-world" target="_blank" rel="noreferrer" >
                                 <InfoCard>
                                     <h1>Where in the World</h1>
                                     <strong>Description: </strong>

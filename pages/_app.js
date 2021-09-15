@@ -1,4 +1,4 @@
-import Head from 'next/head';
+
 import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -19,9 +19,6 @@ const Container = styled.div`
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400;500&display=swap" rel="stylesheet" />
-      </Head>
       <GlobalStyle />
       <Container>
         <Component {...pageProps} />
