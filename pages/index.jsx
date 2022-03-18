@@ -13,7 +13,7 @@ import {
     InfoCard
 } from '../styles/home';
 
-import { workExperienceData } from './data';
+import { workExperienceData } from '../data/data';
 
 export default function Home() {
     return(
