@@ -13,6 +13,8 @@ import {
     InfoCard
 } from '../styles/home';
 
+import { workExperienceData } from './data';
+
 export default function Home() {
     return(
         <>
@@ -59,34 +61,21 @@ export default function Home() {
                 <Info>
                     <h2>Work Experience</h2>
                     <ul className="card-list ">
-                        <li>
-                            
-                            <a href="https://www.mundiale.com.br/" target="_blank" rel="noreferrer" >
-                                <InfoCard >
-                                <h1>Software Developer Intern | Mundiale</h1>
-                                <span>Belo Horizonte - MG, Brazil</span>
-                                <h3>Feb, 2021 - Current</h3>
-                                <p>
-                                        Working as a Frontend Software Developer Intern using React.js, TypeScript, Material UI and also creating figma prototypes for Dashboards and other Web Applications.
-                                </p>
-                                </InfoCard>
-                            </a>
-                            
-                        </li>
 
-                        <li>
-                            <a href="https://stefanini.com/pt-br" target="_blank" rel="noreferrer" >
-                                <InfoCard>
-                                <h1>Service Desk Intern | Stefanini Group</h1>
-                                <span>Belo Horizonte - MG, Brazil</span>
-                                <h3>Aug, 2021 - Feb, 2021</h3>
-                                <p>
-                                        Working as a Service Desk intern opening and solving lvl 1 tickets for great clients of the region.
-                                </p>
-                                </InfoCard>
-                            </a>
-                        </li>
-                        
+                        {workExperienceData.map(job => (
+                            <li key={job.id}>
+                               <a href={job.companyWebsite} target="_blank" rel="noreferrer">
+                                   <InfoCard>
+                                        <h1>{job.title}</h1>
+                                        <span>{job.location}</span>
+                                        <h3>{job.period}</h3>
+                                        <p>
+                                          {job.description}
+                                        </p>
+                                   </InfoCard>
+                               </a>
+                            </li>
+                        ))}
                     </ul>
 
                     <h2>Projects</h2>
