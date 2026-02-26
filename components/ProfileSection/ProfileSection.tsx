@@ -9,7 +9,7 @@ export default function ProfileSection() {
 
   return (
     <Tooltip.Provider>
-      <div className="relative flex min-h-screen items-center justify-center py-20">
+      <section className="relative flex min-h-screen items-center justify-center py-20">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 left-10 h-96 w-96 rounded-full bg-teal-500/20 blur-3xl"></div>
           <div className="absolute right-10 bottom-20 h-96 w-96 rounded-full bg-cyan-500/20 blur-3xl"></div>
@@ -133,7 +133,7 @@ export default function ProfileSection() {
         </div>
 
         <ScrollIndicator />
-      </div>
+      </section>
     </Tooltip.Provider>
   );
 }
