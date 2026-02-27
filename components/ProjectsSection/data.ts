@@ -8,7 +8,7 @@ export const projects = [
     media: "/mockup-portfolio.png",
     links: {
       github: "https://github.com/rony646/portfolio-v2",
-      demo: "https://tba.com",
+      demo: "https://dq2p27cy59btr.cloudfront.net",
     },
   },
   {
