@@ -1,45 +1,48 @@
+"use client";
+
 import Image from "next/image";
 import * as Tooltip from "@radix-ui/react-tooltip";
-import { Linkedin, Github, Mail, MessageCircle } from "lucide-react";
+import { Linkedin, Github, Mail } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 import ScrollIndicator from "@/components/ui/scroll-indicator";
 import { data } from "./data";
 
 export default function ProfileSection() {
-  const { name, title, bio, imageUrl, links } = data;
+  const { name, title, bio, links } = data;
 
   return (
     <Tooltip.Provider>
-      <div className="relative flex min-h-screen items-center justify-center py-20">
+      <section className="relative flex min-h-screen flex-col px-4 pt-10 pb-0 sm:pt-14 lg:pt-16">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 left-10 h-96 w-96 rounded-full bg-teal-500/20 blur-3xl"></div>
           <div className="absolute right-10 bottom-20 h-96 w-96 rounded-full bg-cyan-500/20 blur-3xl"></div>
         </div>
 
-        <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
-          <div className="mb-8 inline-block">
-            <div className="h-40 w-40 overflow-hidden rounded-full bg-gradient-to-br from-teal-500 to-cyan-600 p-1">
-              <div className="h-full w-full overflow-hidden rounded-full bg-black">
-                <Image
-                  src="/profile.png"
-                  alt={name}
-                  width={160}
-                  height={160}
-                  className="h-full w-full scale-110 object-cover"
-                />
+        <div className="relative z-10 flex flex-1 flex-col items-center justify-center">
+          <div className="mx-auto w-full max-w-4xl text-center">
+            <div className="mb-6 inline-block sm:mb-8">
+              <div className="h-40 w-40 overflow-hidden rounded-full bg-gradient-to-br from-teal-500 to-cyan-600 p-1">
+                <div className="h-full w-full overflow-hidden rounded-full bg-black">
+                  <Image
+                    src="/profile.png"
+                    alt={name}
+                    width={160}
+                    height={160}
+                    className="h-full w-full scale-110 object-cover"
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="mb-6">
-            <h1 className="mb-4 bg-gradient-to-r from-teal-400 via-cyan-400 to-teal-500 bg-clip-text text-5xl leading-[1.15] text-transparent lg:text-7xl">
-              &lt;{name}/&gt;
-            </h1>
-            <p className="mb-6 text-2xl text-gray-400 lg:text-3xl">{title}</p>
-            <p className="mx-auto mt-1 mb-12 max-w-2xl leading-relaxed text-gray-500">{bio}</p>
-          </div>
+            <div className="mb-8 sm:mb-10">
+              <h1 className="mb-4 bg-gradient-to-r from-teal-400 via-cyan-400 to-teal-500 bg-clip-text text-5xl leading-[1.15] text-transparent lg:text-7xl">
+                &lt;{name}/&gt;
+              </h1>
+              <p className="mb-5 text-2xl text-gray-400 lg:text-3xl">{title}</p>
+              <p className="mx-auto mt-1 max-w-2xl leading-relaxed text-gray-500">{bio}</p>
+            </div>
 
-          <div className="flex justify-center gap-5">
-            {links.linkedin && (
+            <div className="relative z-20 flex justify-center gap-4 sm:gap-5">
               <Tooltip.Root>
                 <Tooltip.Trigger asChild>
                   <a
@@ -61,8 +64,6 @@ export default function ProfileSection() {
                   </Tooltip.Content>
                 </Tooltip.Portal>
               </Tooltip.Root>
-            )}
-            {links.github && (
               <Tooltip.Root>
                 <Tooltip.Trigger asChild>
                   <a
@@ -84,17 +85,16 @@ export default function ProfileSection() {
                   </Tooltip.Content>
                 </Tooltip.Portal>
               </Tooltip.Root>
-            )}
-            {links.whatsapp && (
               <Tooltip.Root>
                 <Tooltip.Trigger asChild>
                   <a
                     href={links.whatsapp}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="WhatsApp"
                     className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-green-500 to-green-600 shadow-lg shadow-green-500/30 transition-transform hover:scale-110"
                   >
-                    <MessageCircle className="h-6 w-6 text-teal-400" />
+                    <SiWhatsapp className="h-6 w-6 text-white" />
                   </a>
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
@@ -107,8 +107,6 @@ export default function ProfileSection() {
                   </Tooltip.Content>
                 </Tooltip.Portal>
               </Tooltip.Root>
-            )}
-            {links.email && (
               <Tooltip.Root>
                 <Tooltip.Trigger asChild>
                   <a
@@ -128,12 +126,12 @@ export default function ProfileSection() {
                   </Tooltip.Content>
                 </Tooltip.Portal>
               </Tooltip.Root>
-            )}
+            </div>
           </div>
         </div>
 
-        <ScrollIndicator />
-      </div>
+        <ScrollIndicator className="relative z-10 mb-8 hidden md:flex" />
+      </section>
     </Tooltip.Provider>
   );
 }
