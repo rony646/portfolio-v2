@@ -11,6 +11,14 @@ export default $config({
     };
   },
   async run() {
-    new sst.aws.Nextjs("MyWeb", {});
+    new sst.aws.Nextjs("MyWeb", {
+      domain: {
+        name: "ronydev.com",
+        redirects: ["www.ronydev.com"],
+      },
+      environment: {
+        NEXT_PUBLIC_SITE_URL: "https://ronydev.com",
+      },
+    });
   },
 });

@@ -12,10 +12,55 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+
 export const metadata: Metadata = {
-  title: "Rony Silva - Software Engineer",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Rony Silva | Software Engineer",
+    template: "%s | Rony Silva",
+  },
   description:
-    "Brazilian Software Engineer building scalable, high performance web apps with React, Next.js, TypeScript, and AWS.",
+    "Brazilian Software Engineer building scalable, high-performance web apps with React, Next.js, TypeScript, and AWS.",
+  keywords: [
+    "Rony Silva",
+    "Software Engineer",
+    "Full Stack Developer",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "AWS",
+    "Portfolio",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Rony Silva Portfolio",
+    title: "Rony Silva | Software Engineer",
+    description:
+      "Brazilian Software Engineer building scalable, high-performance web apps with React, Next.js, TypeScript, and AWS.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rony Silva | Software Engineer",
+    description:
+      "Brazilian Software Engineer building scalable, high-performance web apps with React, Next.js, TypeScript, and AWS.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
