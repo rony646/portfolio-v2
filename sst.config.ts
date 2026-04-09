@@ -11,13 +11,22 @@ export default $config({
     };
   },
   async run() {
+    const isProduction = $app.stage === "production";
+    const openAiApikey = new sst.Secret("OpenAiApiKey");
+
     new sst.aws.Nextjs("MyWeb", {
-      domain: {
-        name: "ronydev.com",
-        redirects: ["www.ronydev.com"],
-      },
+      link: [openAiApikey],
+      domain: isProduction
+        ? {
+            name: "ronydev.com",
+            redirects: ["www.ronydev.com"],
+          }
+        : {
+            name: `${$app.stage}.ronydev.com`,
+          },
       environment: {
         NEXT_PUBLIC_SITE_URL: "https://ronydev.com",
+        OPENAI_API_KEY: process.env.OPENAI_API_KEY ?? "",
       },
     });
   },
