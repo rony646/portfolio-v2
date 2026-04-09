@@ -16,7 +16,7 @@ export default function AIChatWidget() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: "Hey! I'm Rony's AI avatar. Ask me about his experience, tech stack, or career — I'll answer as if I were him.",
+      text: "Hey there! I’m Rony. Feel free to ask about my work experience, technical skills, or career journey.",
       sender: "ai",
       timestamp: new Date(),
     },
@@ -27,7 +27,6 @@ export default function AIChatWidget() {
   const [isMobile, setIsMobile] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // Check if mobile
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
@@ -35,7 +34,6 @@ export default function AIChatWidget() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Auto-dismiss label after 5 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLabel(false);
@@ -43,7 +41,6 @@ export default function AIChatWidget() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Scroll to bottom when messages change
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, isLoading]);
@@ -51,7 +48,6 @@ export default function AIChatWidget() {
   const handleSend = async () => {
     if (!inputValue.trim() || isLoading) return;
 
-    // Add user message
     const userMessage: Message = {
       id: Date.now().toString(),
       text: inputValue,
@@ -118,7 +114,6 @@ export default function AIChatWidget() {
     });
   };
 
-  // Mobile full-screen overlay
   if (isMobile && isOpen) {
     return (
       <motion.div
@@ -144,7 +139,7 @@ export default function AIChatWidget() {
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold text-white">Rony</h3>
-                <p className="text-xs text-gray-400">AI Avatar</p>
+                <p className="text-xs text-gray-400">Software Engineer</p>
               </div>
               <button
                 onClick={() => setIsOpen(false)}
@@ -238,7 +233,7 @@ export default function AIChatWidget() {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-white">Rony</h3>
-                  <p className="text-xs text-gray-400">AI Avatar</p>
+                  <p className="text-xs text-gray-400">Software Engineer</p>
                 </div>
                 <button
                   onClick={() => setIsOpen(false)}

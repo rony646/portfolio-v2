@@ -1,17 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
+import { Resource } from "sst";
 import OpenAI from "openai";
 import path from "path";
 import fs from "node:fs";
 
 const openaiClient = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: Resource.OpenAiApiKey.value,
 });
 
-const PROFILE_PATH = path.join(
-  process.cwd(),
-  "content",
-  "linkedin_profile.txt",
-);
+const PROFILE_PATH = path.join(process.cwd(), "content", "linkedin_profile.txt");
 
 let cachedProfileText: string | null = null;
 
@@ -58,9 +55,6 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     });
   } catch (error) {
     console.error("[/api/chat] error:", error);
-    return NextResponse.json(
-      { error: "Internal server error" },
-      { status: 500 },
-    );
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }
