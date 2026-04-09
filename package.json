@@ -9,7 +9,7 @@
     "format:check": "prettier . --check",
     "lint": "eslint",
     "start": "next start",
-    "sst": "npx sst dev"
+    "sst": "npx sst dev --stage dev"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.998.0",
