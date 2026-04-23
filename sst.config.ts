@@ -13,9 +13,12 @@ export default $config({
   async run() {
     const isProduction = $app.stage === "production";
     const openAiApikey = new sst.Secret("OpenAiApiKey");
+    const transactionalEmail = new sst.aws.Email("TransactionalEmail", {
+      sender: "noreply@ronydev.com",
+    });
 
     new sst.aws.Nextjs("MyWeb", {
-      link: [openAiApikey],
+      link: [openAiApikey, transactionalEmail],
       domain: isProduction
         ? {
             name: "ronydev.com",
