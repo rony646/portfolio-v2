@@ -14,7 +14,7 @@ export default $config({
     const isProduction = $app.stage === "production";
     const openAiApikey = new sst.Secret("OpenAiApiKey");
     const transactionalEmail = new sst.aws.Email("TransactionalEmail", {
-      sender: "noreply@ronydev.com",
+      sender: "no-reply@ronydev.com",
     });
 
     new sst.aws.Nextjs("MyWeb", {
