@@ -13,9 +13,18 @@ export default $config({
   async run() {
     const isProduction = $app.stage === "production";
     const openAiApikey = new sst.Secret("OpenAiApiKey");
-    const transactionalEmail = new sst.aws.Email("TransactionalEmail", {
-      sender: "no-reply@ronydev.com",
-    });
+
+    const getTransactionalEmail = () => {
+      try {
+        return sst.aws.Email.get("TransactionalEmail", "no-reply@ronydev.com");
+      } catch (error) {
+        return new sst.aws.Email("TransactionalEmail", {
+          sender: "no-reply@ronydev.com",
+        });
+      }
+    };
+
+    const transactionalEmail = getTransactionalEmail();
 
     new sst.aws.Nextjs("MyWeb", {
       link: [openAiApikey, transactionalEmail],
