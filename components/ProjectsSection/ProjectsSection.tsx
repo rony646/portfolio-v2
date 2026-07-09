@@ -15,6 +15,9 @@ import {
   SiReact,
   SiTailwindcss,
   SiTypescript,
+  SiFastapi,
+  SiVite,
+  SiPython,
 } from "react-icons/si";
 import CustomPrevArrow from "./CustomPrevArrow";
 import CustomNextArrow from "./CustomNextArrow";
@@ -30,10 +33,14 @@ const techIcons: Record<string, IconType> = {
   TypeScript: SiTypescript,
   "Tailwind CSS": SiTailwindcss,
   AWS: SiAmazonwebservices,
+  FastAPI: SiFastapi,
+  Vite: SiVite,
   "React Native": SiReact,
   Expo: SiExpo,
   "OpenAI API": SiOpenai,
   "Firebase Auth": SiFirebase,
+  Firebase: SiFirebase,
+  Python: SiPython,
 };
 
 export default function ProjectsSection() {

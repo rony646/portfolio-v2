@@ -1,6 +1,18 @@
 export const projects = [
   {
     id: "1",
+    name: "CrewPilot",
+    description:
+      "Full-stack app that turns a one-paragraph idea into a structured Product, Market, and Tech plan using a sequential CrewAI multi-agent pipeline. Built with FastAPI, React, and Firebase Auth, with history and results flows for generated plans.",
+    techStack: ["React", "TypeScript", "Python", "Vite", "FastAPI", "CrewAI", "Firebase"],
+    media: "/mockup-crewpilot.png",
+    links: {
+      github: "https://github.com/rony646/crewpilot",
+      demo: "https://crewpilot-nine.vercel.app",
+    },
+  },
+  {
+    id: "2",
     name: "My Portfolio",
     description:
       "Modern personal portfolio built with Next.js App Router and deployed on AWS using SST. Focused on performance, clean UI, reusable components, and production-ready cloud infrastructure.",
@@ -12,7 +24,7 @@ export const projects = [
     },
   },
   {
-    id: "2",
+    id: "3",
     name: "Insta Line",
     description:
       "React Native app that lets users upload images and an optional description, then uses the OpenAI API to generate social media captions. Includes Firebase authentication and a history flow for generated content.",
