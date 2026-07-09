@@ -2,6 +2,10 @@
 
 Modern personal portfolio built with Next.js App Router, deployed to AWS with SST, and featuring an AI-powered chat assistant.
 
+<img width="1075" height="692" alt="mockup_rony_dev" src="https://github.com/user-attachments/assets/08d64bc8-5a97-44fc-bfa4-48323edc42ba" />
+
+<hr>
+
 ## Tech Stack
 
 - Next.js 16 (App Router)
