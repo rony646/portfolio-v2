@@ -2,7 +2,7 @@
 
 Modern personal portfolio built with Next.js App Router, deployed to AWS with SST, and featuring an AI-powered chat assistant.
 
-<img width="1075" height="692" alt="mockup_rony_dev" src="https://github.com/user-attachments/assets/08d64bc8-5a97-44fc-bfa4-48323edc42ba" />
+<img width="2048" height="1152" alt="macbook_iphone_mockup" src="https://github.com/user-attachments/assets/d1bf2ad0-ecbb-4763-be1d-54edcf18e3ce" />
 
 <hr>
 
