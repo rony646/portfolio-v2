@@ -1,105 +1,100 @@
 Contact
-Rua Metano, n° 188/ Bairro
-Petrolândia/ Contagem - MG
+Rua Metano, n° 188/ Bairro Petrolândia/ Contagem - MG
 31 994529271 (Home)
 ronypeterson646@outlook.com
-www.linkedin.com/in/rony-
-s-11a738117 (LinkedIn)
+www.linkedin.com/in/rony-s-11a738117 (LinkedIn)
 ronydev.com (Portfolio)
+
 Top Skills
-Vite
-SST
-Tailwind CSS
+React, Next.js, TypeScript, Node.js, Hono, Nest.js, Drizzle
+PostgreSQL, Neon, HubSpot, SST, AWS
+Radix, shadcn, Zod, RTK Query, Cypress, Playwright
+PWA, BAML, CrewAI, LLM Integration
+
 Certifications
-React - The Complete Guide (incl
-Hooks, React Router, Redux)
-Node JS Curso Completo do Básico
-ao Avançado
+React - The Complete Guide (incl Hooks, React Router, Redux)
+Node JS Curso Completo do Básico ao Avançado
 MySQL - Desenvolvedor
-Introdução ao Git e Controle de
-Versões
-Testing React with Jest and Testing
-Library
+Introdução ao Git e Controle de Versões
+Testing React with Jest and Testing Library
+
 Rony Silva
-Senior Software Engineer | React - React Native - Node.js | Frontend
+Senior Software Engineer | AI-First Products & Agentic Systems | React, React Native, Next.js, Node.js
 Contagem, Minas Gerais, Brazil
+
 Summary
-Frontend engineer proficient in creating compelling and functional
-user interfaces. Skilled in utilizing popular frontend frameworks
-and staying up-to-date with industry trends. Effective team player,
-providing valuable feedback and conducting thorough code reviews.
-Committed to delivering high-quality results and prioritizing user
-experience to create exceptional digital products.
+Software Engineer from Brazil focused on building scalable, high performance digital products with strong user experience. I have experience collaborating with international teams, taking features from the UI through APIs and into production on AWS, and driving product growth, including helping scale a platform from 8k to 30k monthly users. Lately I've been building AI agent tools and HubSpot operations systems for clients, with hands on experience across backend services, AWS, LLM API integrations (OpenAI, Gemini, Groq), and AI tools like Cursor and Claude Code.
+
 Experience
+
 Curotec
-Software Engineer
-January 2026 - Present (3 months)
-Pennsylvania, United States
-Full Stack Software Engineer at Curotec, allocated to Inferred Edge, delivering
-custom AI-first software solutions for clients across multiple industries. I build
-and ship end-to-end features using React, Hono APIs, Neon (PostgreSQL),
-SST, and AWS services, adapting quickly to different business contexts and
-technical requirements.
+Full Stack Software Engineer
+January 2026 - Present
+Pennsylvania, United States (Remote)
+Allocated to Inferred Edge. Built their agent platform and operations system for BC Stone Homes, a custom home builder in Alabama and Georgia.
+
+BC Stone Homes (via Inferred Edge) · Jun 2026 - Present
+- Built the milestone and conflict system used across deals, lots, plans, companies, and developments, including schema, seed data, evaluation, and boards in the Next.js portal
+- Built a shared rule engine (editor and evaluator) allowing operations teams to write nested HubSpot rules in the database instead of requiring hard-coded engineering changes
+- Implemented association hops, any/all matching, dates, record counts, and property matching by label
+- Added violation scans from HubSpot webhooks into AWS Lambdas, with a resolution screen and override controls
+- Built the document portal with versioning, cascading across objects, visibility controls, share links, and HubSpot property creation
+
+Inferred Edge Platform · Jan 2026 - Jun 2026
+- Built the Agent Review Console with React, RTK Query, Hono, and PostgreSQL, allowing teams to inspect, approve, or reject agent runs before actions are sent
+- Added audit history for approvals and rejections and fixed memory scoping so rejection notes stay associated with the correct scope
+- Built Weekly Client Summaries with send history, recipient selection, draft review, and email delivery through AWS SES
+- Built the companies CRM (list, detail, search) and a cron that expires stale agent runs
+
 Grupo Boticario
 4 years 4 months
-Senior Frontend Engineer | React - Typescript - Webpack - Cypress -
-Azure
+Senior Frontend Engineer | React - Typescript - Webpack - Cypress - Azure
 October 2024 - January 2026 (1 year 4 months)
-- Progressed from Junior to Senior Software Engineer over 4 years within the
-Franchisee Platform squad
-- Helped scale the platform from ~8k to 30k monthly active users
-- Participated in the decommissioning of a legacy system, consolidating users
-into the new platform
-- Designed and implemented a microfrontend architecture enabling new
-systems to be integrated in minutes without deploying the core application
-- Developed an admin module allowing dynamic platform customization for
-different audiences
-Page 1 of 3
+Franchisee Experience squad, building Extranet, the platform franchisees use for daily operations.
+- Progressed from Junior to Senior Software Engineer in four years
+- Helped grow Extranet from approximately 8,000 to 30,000 monthly users
+- Built frontend features with React and TypeScript on a Radix-based design system
+- Worked with microfrontend architecture, allowing other squads to integrate applications into the hub without deploying the core application
+- Helped design and build the admin platform where teams could manage homepage content and add microfrontends from other squads
+- Helped migrate users from the legacy system to the new Extranet
+- Built a mobile PWA with push notifications
+- Worked with ConfigCat, Cypress, Playwright, NestJS, Strapi, and AWS
 
--- 1 of 3 --
-
-- Launched a mobile-first PWA version, later highlighted at executive
-leadership level
-- Worked with React.js, Nest.js, Strapi, Radix UI, AWS, and microfrontend
-architecture
-- Implemented A/B testing (ConfigCat), analytics tracking, and end-to-end tests
-with Cypress and Playwright
 Mid-level Frontend Engineer | React - Typescript - Cypress - Strapi
 May 2022 - October 2024 (2 years 6 months)
 Belo Horizonte, Minas Gerais, Brasil
+
 Junior Frontend Engineer | React - Typescript - Jest - Redux
 October 2021 - May 2022 (8 months)
 Belo Horizonte, Minas Gerais, Brasil
+
 TEDxBeloHorizonte
 Volunteer Frontend Engineer | React - Typescript - Next.js - Material UI
 September 2021 - June 2022 (10 months)
 Belo Horizonte, Minas Gerais, Brasil
 - Developed the live streaming page using Next.js and React
 - Built a responsive UI with Material UI focused on usability and performance
-- Integrated an external real-time chat system for live audience interaction and
-Q&A
-- Collaborated with the team in an Agile workflow with sprint-based
-development
+- Integrated an external real-time chat system for live audience interaction and Q&A
+- Collaborated with the team in an Agile workflow with sprint-based development
 - Contributed to the digital platform supporting the live TEDx event
+
 Mundiale
 Software Engineer Intern | React - Typescript - Javascript - Python
 February 2021 - October 2021 (9 months)
 Belo Horizonte, Minas Gerais, Brasil
+
 Stefanini Group
 Service Desk Intern
 August 2020 - February 2021 (7 months)
 Belo Horizonte, Minas Gerais, Brasil
+
 Education
 Estácio
-Page 2 of 3
+Graduação Tecnológica, Análise e Desenvolvimento de Sistemas · (2019 - 2021)
 
--- 2 of 3 --
-
-Graduação Tecnológica, Análise e Desenvolvimento de
-Sistemas · (2019 - 2021)
 Fundação de Ensino de Contagem - Funec
 Ensino Médio · (2016 - 2018)
-Page 3 of 3
 
--- 3 of 3 --
-
+Languages
+English: Proficient
+Portuguese: Native

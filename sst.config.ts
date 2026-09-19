@@ -38,7 +38,6 @@ export default $config({
           },
       environment: {
         NEXT_PUBLIC_SITE_URL: "https://ronydev.com",
-        OPENAI_API_KEY: process.env.OPENAI_API_KEY ?? "",
       },
     });
   },
